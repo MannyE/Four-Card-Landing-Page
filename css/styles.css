@@ -45,7 +45,7 @@ footer {
   border-top: 7px  solid;
   border-radius: 2%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  height: 250px;
+  height: 230px;
   margin: auto;
   padding-left: 40px;
   position: relative;
@@ -76,10 +76,10 @@ footer {
 
 .Card-Left {
   border-color: hsl(180, 62%, 55%);
-  left:16%;
+  left:15%;
 }
 
 .Card-Right {
   border-color: hsl(212, 86%, 64%);
-  right:16%;
+  right:15%;
 }
