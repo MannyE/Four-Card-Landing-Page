@@ -57,7 +57,7 @@ footer {
 .Card-Top img,  .Card-Right img, .Card-Bottom img, .Card-Left img {
   position: absolute;
   right: 0;
-  padding-right: 6%;
+  padding-right: 8%;
 }
 
 .Card-Right, .Card-Left {
