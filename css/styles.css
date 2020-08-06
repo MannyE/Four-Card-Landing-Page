@@ -1,85 +1,160 @@
+
 body  {
   background: hsl(0, 0%, 98%);
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9375rem
+  font-size: 16px;
   margin: auto;
-  padding-top: 50px;
+  margin-top: 5em;
   position: relative;
   text-align: center;
+  padding: 0;
+
 }
 
-p {
-  color: hsl(229, 6%, 66%);
-}
+p {color: hsl(229, 6%, 66%);}
 
-footer {
-  display: block;
-  position: relative;
-  top: 300px;
-}
+h3{margin-bottom: .3em;}
 
-/*------------------ Classes--------------------*/
-.Heading
+@media screen and (max-width: 1279px)
 {
-  color: hsl(229, 6%, 66%);
-  font-weight: 200;
-  margin: 0;
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /*------------------ Classes--------------------*/
+  .Heading
+  {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  .subtitle-text {
+    margin: auto auto 4em;
+    max-width: 30em;
+    text-align: center;
+    width: 89%;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-rows: repeat(4, 14.1em);
+    justify-items: center;
+    row-gap: 1.5em;
+    text-align: left;
+    margin-bottom: 4em;
+  }
+
+  .card-container  p{
+    font-size: 0.82rem;
+    width: 95%;
+  }
+
+  .Card1,  .Card2, .Card3, .Card4{
+    border-top: 5px  solid;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 22em;
+    padding-left: 1.5em;
+    position: relative;
+    width: 75%;
+  }
+
+  .Card1{border-color: hsl(180, 62%, 55%);}
+  .Card2 {border-color: hsl(0, 78%, 62%);}
+  .Card3 {border-color: hsl(34, 97%, 64%);}
+  .Card4 {border-color: hsl(212, 86%, 64%);}
+
+  .Card-Top img,  .Card-Right img, .Card-Bottom img, .Card-Left img {
+    position: absolute;
+    right:0;
+    padding:.8em 1.75em 0 0;
+  }
 }
 
-.subtitle {
-  font-weight: 600;
-  margin-top: 0;
-}
 
-.subtitle-text {
-  margin: auto;
-  text-align: center;
-  width: 25%;
-}
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 2.3rem;
+  }
 
-.Cards {
-  position:relative;
-}
+  /*------------------ Classes--------------------*/
+  .Heading
+  {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin: 0;
+  }
 
-.Card-Top,  .Card-Right, .Card-Bottom, .Card-Left {
-  border-top: 7px  solid;
-  border-radius: 2%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  height: 230px;
-  margin: auto;
-  padding-left: 30px;
-  position: relative;
-  text-align: left;
-  transition: 1.0s;
-  width: 22%;
-}
+  .subtitle {
+    font-weight: 600;
+    margin-top: 0;
+  }
 
-.Card-Top img,  .Card-Right img, .Card-Bottom img, .Card-Left img {
-  position: absolute;
-  right: 0;
-  padding-right: 6%;
-}
+  .subtitle-text {
+    margin: auto auto 4em;;
+    text-align: center;
+    width: 30rem;
+  }
 
-.Card-Right, .Card-Left {
-  position: absolute;
-  top:25%;
-}
+  .card-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 2rem;
+    width: 100%;
+  }
 
-.Card-Top {
-  border-color: hsl(0, 78%, 62%);
-  margin: 3% auto 2%;
-}
+  .card-container  p{
+    font-size: 0.85rem;
+    width: 95%;
+    }
 
-.Card-Bottom {
-  border-color: hsl(34, 97%, 64%);
-}
+  .Card-Top,  .Card-Right, .Card-Bottom, .Card-Left {
+    border-top: 7px  solid;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 15rem;
+    margin: auto;
+    padding-left: 2em;
+    position: relative;
+    text-align: left;
+    width: 20em;
+  }
 
-.Card-Left {
-  border-color: hsl(180, 62%, 55%);
-  left:12%;
-}
+  .Card-Top img,  .Card-Right img, .Card-Bottom img, .Card-Left img {
+    padding-top: 1.5rem;
+    position: relative;
+    left: 14em;
+  }
 
-.Card-Right {
-  border-color: hsl(212, 86%, 64%);
-  right:12%;
+  .Card-Top {
+    border-color: hsl(0, 78%, 62%);
+    order:1;
+  }
+
+  .Card-Bottom {
+    border-color: hsl(34, 97%, 64%);
+    order:2;
+  }
+
+   .Card-Right {
+    border-color: hsl(212, 86%, 64%);
+    bottom: 285%;
+    left: 24em;
+    position: relative;
+    order: 4;
+  }
+
+  .Card-Left{
+    border-color: hsl(180, 62%, 55%);
+    bottom: 170%;
+    right:24em;
+    position: relative;
+    order:3;
+  }
 }
